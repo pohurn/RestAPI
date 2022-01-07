@@ -1,6 +1,6 @@
 # RestAPI
 
 
-# GET Request Screenshot
+# GET Request
 
-![alt text](https://github.com/pohurn/RestAPI/blob/main/Screenshots/GetRequest.png)
+![get request](https://github.com/pohurn/RestAPI/blob/main/Screenshots/GetRequest.png)
