@@ -4,41 +4,41 @@ using System.Web.Http;
 
 namespace RestApi.Controllers
 {
-    public class EmployeeController : ApiController
+    public class StudentController : ApiController
     {
         [HttpPost]
-        public bool AddEmpDetails()
+        public bool AddStudentDetails()
         {
             return true;
-            //write insert logic  
+            // insert in database
 
         }
         [HttpGet]
-        public EmployeeModel[] Get()
+        public StudentModel[] Get()
         {
-            return new EmployeeModel[]
+            return new StudentModel[]
             {
-                new EmployeeModel
+                new StudentModel
                 {
                     id = 1,
                     firstname = "sam",
-                    lastname = "employeeONE",
+                    lastname = "studentONE",
                     address = "Port louis",
                     age = 23
                 },
-                new EmployeeModel
+                new StudentModel
                 {
                     id = 2,
                     firstname = "John",
-                    lastname = "employeeTWO",
+                    lastname = "studentTWO",
                     address = "Pamplemousses",
                     age = 30
                 },
-                new EmployeeModel
+                new StudentModel
                 {
                     id = 3,
                     firstname = "Alex",
-                    lastname = "employeeTHREE",
+                    lastname = "studentTHREE",
                     address = "Terre Rouge",
                     age = 42
                 }
@@ -47,9 +47,9 @@ namespace RestApi.Controllers
 
 
         [HttpDelete]
-        public string DeleteEmpDetails(string id)
+        public string DeleteStudentDetails(string id)
         {
-            return "Employee details deleted having Id " + id;
+            return "Student details deleted having Id " + id;
 
         }
     }

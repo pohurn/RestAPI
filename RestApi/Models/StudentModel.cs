@@ -5,7 +5,7 @@ using System.Web;
 
 namespace RestApi.Models
 {
-    public class EmployeeModel
+    public class StudentModel
     {
         public int id { get; set; }
         public string firstname { get; set; }
